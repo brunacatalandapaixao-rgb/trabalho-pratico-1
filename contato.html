@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato - Acessibilidade à Mesa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#conteudo-principal">
+        Pular para o conteúdo principal
+    </a>
+
+    <header>
+
+        <h1>Entre em contato</h1>
+
+        <p>Sua opinião ajuda a construir espaços inclusivos.</p>
+
+        <nav aria-label="Menu principal">
+
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o projeto</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="cardapio.html">Alimentação</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="conteudo-principal">
+
+        <h2>Fale conosco</h2>
+
+        <p>
+            O projeto Acessibilidade à Mesa acredita que a troca
+            de experiências é fundamental para construir ambientes
+            mais inclusivos.
+        </p>
+
+        <p>
+            Queremos conhecer suas ideias, sugestões e experiências
+            relacionadas à acessibilidade nos estabelecimentos
+            de alimentação.
+        </p>
+
+        <h2>Informações de contato</h2>
+
+        <ul>
+            <li>E-mail: contato@acessibilidadeamesa.com.br</li>
+            <li>Projeto educativo fictício.</li>
+            <li>Atendimento: de segunda a sexta-feira.</li>
+        </ul>
+
+        <h2>Nosso compromisso</h2>
+
+        <p>
+            Promover informação, conscientização e respeito,
+            contribuindo para uma sociedade na qual todas as pessoas
+            possam exercer sua autonomia.
+        </p>
+
+        <h2>Envie sua sugestão</h2>
+
+        <form action="#" method="get" onsubmit="return false;">
+
+            <fieldset>
+
+                <legend>Seus dados</legend>
+
+                <label for="nome">Digite seu nome:</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    autocomplete="name">
+
+                <label for="email">Digite seu e-mail:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Sua mensagem</legend>
+
+                <label for="assunto">Assunto:</label>
+
+                <input
+                    type="text"
+                    id="assunto"
+                    name="assunto">
+
+                <label for="mensagem">
+                    Escreva sua sugestão ou mensagem:
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6">
+                </textarea>
+
+            </fieldset>
+
+            <button type="submit">Enviar mensagem</button>
+
+        </form>
+
+        <p>
+            Atenção: este formulário é demonstrativo.
+            As mensagens não são armazenadas nem enviadas.
+        </p>
+
+    </main>
+
+    <footer>
+
+        <p>Projeto Acessibilidade à Mesa.</p>
+
+        <p>Educação, inclusão e autonomia.</p>
+
+    </footer>
+
+</body>
+
+</html>

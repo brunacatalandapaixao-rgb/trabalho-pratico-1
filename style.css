@@ -1,0 +1,244 @@
+/* Configurações gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f5ed;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Link para pular ao conteúdo */
+
+body > a:first-child {
+    display: inline-block;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #5b2638;
+    font-weight: bold;
+}
+
+body > a:first-child:focus {
+    outline: 3px solid #d18a32;
+    outline-offset: 4px;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #5b2638;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 12px;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Menu de navegação */
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: white;
+    color: #5b2638;
+}
+
+/* Conteúdo principal */
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Destaque ao navegar pelo teclado */
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #d18a32;
+    outline-offset: 4px;
+}
+
+/* Títulos */
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h2 {
+    color: #5b2638;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d8c6b5;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #42634c;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #5b2638;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Parágrafos e listas */
+
+p {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Imagens */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Links */
+
+a {
+    color: #633047;
+}
+
+/* Formulários */
+
+form {
+    margin-top: 30px;
+}
+
+fieldset {
+    border: 2px solid #d8c6b5;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #5b2638;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 2px solid #777777;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #5b2638;
+    color: white;
+    padding: 14px 25px;
+    border: 2px solid #5b2638;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: white;
+    color: #5b2638;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #5b2638;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Telas menores */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}

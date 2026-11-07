@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acessibilidade à Mesa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#conteudo-principal">
+        Pular para o conteúdo principal
+    </a>
+
+    <header>
+
+        <h1>Acessibilidade à Mesa</h1>
+
+        <p>
+            Alimentação com inclusão, autonomia e respeito.
+        </p>
+
+        <nav aria-label="Menu principal">
+
+            <ul>
+                <li><a href="index.html" aria-current="page">Início</a></li>
+                <li><a href="sobre.html">Sobre o projeto</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="cardapio.html">Alimentação</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="conteudo-principal">
+
+        <h2>Bem-vindo ao Acessibilidade à Mesa!</h2>
+
+        <p>
+            Este projeto tem como objetivo apresentar a importância
+            da acessibilidade nos estabelecimentos de alimentação,
+            promovendo inclusão, autonomia e respeito às pessoas
+            com deficiência.
+        </p>
+
+        <p>
+            Acreditamos que todas as pessoas devem ter o direito
+            de escolher seus alimentos, consultar cardápios e
+            realizar suas refeições com independência e dignidade.
+        </p>
+
+        <h2>O que você encontrará aqui?</h2>
+
+        <ul>
+            <li>Informações sobre acessibilidade.</li>
+            <li>História da inclusão nos espaços de alimentação.</li>
+            <li>Exemplos de atendimento inclusivo.</li>
+            <li>Um cardápio com descrições dos alimentos.</li>
+        </ul>
+
+        <h2>Pesquisa sobre acessibilidade na alimentação</h2>
+
+        <p>
+            Queremos conhecer sua opinião sobre a acessibilidade
+            em restaurantes, lanchonetes e outros estabelecimentos
+            de alimentação.
+        </p>
+
+        <p>
+            Responda às perguntas abaixo.
+            Este formulário é demonstrativo e não armazena
+            nem envia respostas.
+        </p>
+
+        <form action="#" method="get" onsubmit="return false;">
+
+            <fieldset>
+
+                <legend>Informações pessoais</legend>
+
+                <label for="nome">Nome:</label>
+
+                <input type="text" id="nome" name="nome">
+
+                <label for="email">E-mail:</label>
+
+                <input type="email" id="email" name="email">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Sobre acessibilidade</legend>
+
+                <p>
+                    Você já encontrou dificuldades para consultar
+                    um cardápio em um restaurante?
+                </p>
+
+                <input type="radio"
+                    id="dificuldade-sim"
+                    name="dificuldade"
+                    value="sim">
+
+                <label for="dificuldade-sim">Sim</label>
+
+                <input type="radio"
+                    id="dificuldade-nao"
+                    name="dificuldade"
+                    value="nao">
+
+                <label for="dificuldade-nao">Não</label>
+
+                <input type="radio"
+                    id="dificuldade-as-vezes"
+                    name="dificuldade"
+                    value="as-vezes">
+
+                <label for="dificuldade-as-vezes">Às vezes</label>
+
+                <p>
+                    Qual recurso de acessibilidade você considera
+                    mais importante em um cardápio?
+                </p>
+
+                <input type="checkbox"
+                    id="braille"
+                    name="recursos"
+                    value="braille">
+
+                <label for="braille">Cardápio em Braille</label>
+
+                <input type="checkbox"
+                    id="digital"
+                    name="recursos"
+                    value="digital">
+
+                <label for="digital">Cardápio digital acessível</label>
+
+                <input type="checkbox"
+                    id="audio"
+                    name="recursos"
+                    value="audio">
+
+                <label for="audio">Cardápio em áudio</label>
+
+                <input type="checkbox"
+                    id="atendimento"
+                    name="recursos"
+                    value="atendimento">
+
+                <label for="atendimento">Atendimento inclusivo</label>
+
+                <label for="sugestao">
+                    Deixe uma sugestão para melhorar
+                    a acessibilidade nos restaurantes:
+                </label>
+
+                <textarea
+                    id="sugestao"
+                    name="sugestao"
+                    rows="5"
+                    cols="40">
+                </textarea>
+
+            </fieldset>
+
+            <button type="submit">Enviar respostas</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>Projeto Acessibilidade à Mesa.</p>
+
+        <p>Educação, inclusão e autonomia.</p>
+
+    </footer>
+
+</body>
+
+</html>
